@@ -9,7 +9,7 @@ import java.util.Scanner;
 import java.util.StringTokenizer;
 import java.util.Arrays;
  
-class Main {
+class ATM {
  
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
