@@ -1,6 +1,16 @@
 N, M = map(int, input().split())
 A = list(map(int, input().split()))
 
+def quickSort(start, end, M):
+    if start < end:
+        pivot = findPivot(start, end)
+        if pivot == M:
+            return
+        elif M < pivot:
+            quickSort(start, pivot - 1, M)
+        else:
+            quickSort(pivot + 1, end, M)
+
 def findPivot(start, end):
     if end - start <= 1:
         if A[start] > A[end]:
@@ -24,15 +34,6 @@ def findPivot(start, end):
         A[start], A[j] = A[j], A[start]
         return j
 
-def quickSort(start, end, M):
-    if start < end:
-        pivot = findPivot(start, end)
-        if pivot == M:
-            return
-        elif M < pivot:
-            quickSort(start, pivot - 1, M)
-        else:
-            quickSort(pivot + 1, end, M)
 
 quickSort(0, N - 1, M - 1)
 print(A[M - 1])
