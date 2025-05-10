@@ -22,7 +22,7 @@ class Point implements Comparable<Point>{
     
 }
 
-class BubbleSort{
+public class BubbleSort{
    
     public static void main(String[] args) throws NumberFormatException, IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -35,7 +35,7 @@ class BubbleSort{
         for(int i=0; i<N; i++){
             point[i] = new Point(Integer.parseInt(br.readLine()), i);
         }
-        Arrays.sort(point, 0, N);
+        Arrays.sort(point);
         
         int max = 0;
         for(int i=0; i<N; i++){
