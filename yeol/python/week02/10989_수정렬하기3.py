@@ -1,3 +1,4 @@
+import sys
 
 input = sys.stdin.read
 data = list(map(int, input().split()))
