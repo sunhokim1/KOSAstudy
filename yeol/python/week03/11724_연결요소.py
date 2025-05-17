@@ -1,39 +1,23 @@
-from collections import deque
+n, m = map(int, input().split())  # 첫 줄: 정점 수 N, 간선 수 M
+A = [list(map(int, input().split())) for _ in range(M)]
 
-# 틀렸음 # 예제는 맞음 # 1~N 사이의 key값이 아닌 요소들이 존재.
+# dfs 함수
+def dfs(graph, v, visited):
+    visited[v] = True
+    for i in graph[v]:
+        if not visited[i]:
+            dfs(graph, i, visited)
 
-N, M = map(int, input().split())  # 첫 줄: 정점 수 N, 간선 수 M
-edges = [list(map(int, input().split())) for _ in range(M)]
+graph = [[] for _ in range(n+1)]
+for u,v in A:
+  graph[u].append(v)
+  graph[v].append(u)
 
-graph = { }
-for start,end in edges : 
-  if start not in graph :
-    graph[start] = []
-  if end not in graph :
-    graph[end] = []
-  
-  graph[start].append(end)
-    
-answer = [] 
-stack = []
-count = 0
-for key, values in graph.items() :
-  if stack == [] :
-    stack.append(key)
-
-  if stack[-1] == key :
-    tmps = []
-    flag = False
-    for value in values : 
-      
-      if value not in answer :
-        tmps.append(value)
-        flag = True 
-    if flag == False :
-      count += 1
-    key = stack.pop()
-    answer.append(key)
-    for value in tmps :
-      stack.append(value)
-
+count = 0 # 연결 노드의 수
+visited = [False] * (n+1)
+count = -1
+for i in range(0, n+1):
+    if not visited[i]:
+        dfs(graph, i, visited)
+        count += 1
 print(count)
