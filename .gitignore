@@ -1,0 +1,19 @@
+# Java 관련
+*.class
+*.jar
+*.war
+*.log
+
+# IntelliJ IDEA
+*.iml
+.idea/
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Build
+bin/
+out/
