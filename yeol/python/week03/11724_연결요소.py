@@ -3,7 +3,7 @@ sys.setrecursionlimit(10**6)
 input = sys.stdin.readline
 
 n, m = map(int, input().split())  # 정점 수 N, 간선 수 M
-A = [list(map(int, input().split())) for _ in range(m)]  # ← 여기 고쳤어요!
+A = [list(map(int, input().split())) for _ in range(m)]  
 
 # dfs 함수
 def dfs(graph, v, visited):
