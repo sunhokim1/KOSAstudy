@@ -19,4 +19,11 @@ KOSA Coding Study 레포지토리입니다.
 | BOJ | 1167 트리의 지름 | https://www.acmicpc.net/problem/1167  | 2025-05-19 |
 | BOJ | 1920 수 찾기 | https://www.acmicpc.net/problem/1920  | 2025-05-20 |
 | BOJ | 2343 기타레슨 | https://www.acmicpc.net/problem/2343  | 2025-05-21 |
+| BOJ | 1167 트리의 지름 | https://www.acmicpc.net/problem/1167  | 2025-05-22 |
+| BOJ | 1167 트리의 지름 | https://www.acmicpc.net/problem/1167  | 2025-05-23 |
+| BOJ | 1920 수 찾기 | https://www.acmicpc.net/problem/1920  | 2025-05-26 |
+| BOJ | 2343 기타레슨 | https://www.acmicpc.net/problem/2343  | 2025-05-27 |
+| BOJ | 1300 K번째 수 | https://www.acmicpc.net/problem/1300  | 2025-05-28 |
+
+
 
